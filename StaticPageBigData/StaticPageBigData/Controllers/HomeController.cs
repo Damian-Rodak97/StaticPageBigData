@@ -27,8 +27,8 @@ namespace StaticPageBigData.Controllers
         public async Task<IActionResult> Index()
         {
             MainPageModel page = new MainPageModel();
-                page.UrlModels = await _context.UrlModels.ToListAsync();
-                return View(page);
+            page.UrlModels = await _context.UrlModels.ToListAsync();
+            return View(page);
         }
 
         // GET: UrlModels/Details/5
@@ -136,7 +136,7 @@ namespace StaticPageBigData.Controllers
             {
                 return NotFound();
             }
-
+            
             return View(urlModel);
         }
 
