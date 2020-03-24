@@ -27,7 +27,12 @@ Odchylenie pokazane jest kolorem czerwonym - wskazuje odchylenie od średniej. I
 Odchylenie od średniej wynosi: 101
 Średnia wynosi: 107
 Mediana wynosi: 70
+Czas opóźnienia dla żądania wynosi: maksymalnie do 1100
+Okres próbny: maksymalnie do 1100
+
+![Adnotacja 2020-03-24 204315](https://user-images.githubusercontent.com/50496148/77470049-5a324f00-6e10-11ea-9438-7c9e5297051f.png)
 
 Poniższy graf wykazuję że dla 20 użykowników aplikacja nie sklauję się ponieważ przepustowość nie rośnie.
 
 ![Jmeter4](https://user-images.githubusercontent.com/50496148/77468677-366e0980-6e0e-11ea-9a75-765a81699356.png)
+
