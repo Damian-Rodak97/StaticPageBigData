@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using StaticPageBigData.Models;
+using MailKit.Net.Smtp;
+using MailKit;
+using MimeKit;
+using SQLitePCL;
 
 namespace StaticPageBigData.Controllers
 {
@@ -22,13 +28,14 @@ namespace StaticPageBigData.Controllers
             _context = context;
         }
 
-
         // GET: UrlModels
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             MainPageModel page = new MainPageModel();
             page.UrlModels = await _context.UrlModels.ToListAsync();
             return View(page);
+      
         }
 
         // GET: UrlModels/Details/5
@@ -121,7 +128,7 @@ namespace StaticPageBigData.Controllers
             }
             return View(urlModel);
         }
-
+        
         // GET: UrlModels/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -160,6 +167,33 @@ namespace StaticPageBigData.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpPost]
+        public IActionResult Generate(MainPageModel modelForGenerate)
+        {
+            return View("Index", modelForGenerate);
+        }
+        [HttpPost]
+        public IActionResult Send(MainPageModel mainPageModel)
+        {
+            ViewData["Message"] = "Your send page.";
+            var message = new MimeMessage();
+            message.From.Add(new MailboxAddress("Test", "testsendmails123@gmail.com"));
+            message.To.Add(new MailboxAddress("SendMail", mainPageModel.UrlModel.Email));
+            message.Subject = "SendMail form asp.net Core";
+            var bodyBuilder = new BodyBuilder();
+            bodyBuilder.HtmlBody = mainPageModel.UrlModel.IsHtml;
+            message.Body = bodyBuilder.ToMessageBody();
+            using (var client = new SmtpClient())
+            {
+                client.Connect("smtp.gmail.com",587,false);
+                client.Authenticate("testsendmails123@gmail.com", "1qaz@WSX3edc");
+                client.Send(message);
+                client.Disconnect(true);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
