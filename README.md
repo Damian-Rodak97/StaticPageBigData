@@ -12,6 +12,14 @@ Po uruchomieniu JMeter należy dodać **Thread Group** (grupa wątków). Uzupeł
 
 Prawym przyciskiem myszy klikamy na **Thread Group**. Wybieramy **Add** > **Sampler** > **HTTP Request**. W ustawieniach HTTP Request wypełniamy pola według poniższego przykładu:
 
-![Jmeter](https://user-images.githubusercontent.com/50496148/77461129-644d5100-6e02-11ea-889e-b7227be0b75c.png)
+
 
 Wybieramy **Test Plan** > **Add** > **Listener** > **Graph Results**. Dodatkowo można wybrać opcję **View Results in Table**. Uruchamiamy test klikając przycisk **Uruchom** na pasku narzędzi lub poprzez kombinację klawiszy Ctrl + R.
+
+![Jmeter](https://user-images.githubusercontent.com/50496148/77461129-644d5100-6e02-11ea-889e-b7227be0b75c.png)
+
+Przepustowość jest najważniejszym parametrem. Reprezentuje zdolność serwera do obsługi dużego obciążenia. Im wyższa przepustowość, tym lepsza wydajność serwera.
+
+W tym teście przepustowość wynosi . Oznacza to, że serwer aplikacji osadzonej na portalu Azure może obsłużyć żądań na minutę. 
+
+Odchylenie pokazane jest kolorem czerwonym - wskazuje odchylenie od średniej. Im mniejszy, tym lepiej.
