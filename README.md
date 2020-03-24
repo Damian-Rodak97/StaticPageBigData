@@ -1,0 +1,17 @@
+# Raport JMeter
+
+## Tworzenie testów obciążenia dla aplikacji RSS
+
+**Cel:** utworzenie prostego testu wydajności opartego o protokół HTTP przy użyciu aplikacji JMeter.
+
+## Krok po kroku
+
+Po uruchomieniu JMeter należy dodać **Thread Group** (grupa wątków). Uzupełniamy ustawienia w następujący sposób:
+
+![Jmeter2](https://user-images.githubusercontent.com/50496148/77461080-4f70bd80-6e02-11ea-8f60-1928dd3db100.png)
+
+Prawym przyciskiem myszy klikamy na **Thread Group**. Wybieramy **Add** > **Sampler** > **HTTP Request**. W ustawieniach HTTP Request wypełniamy pola według poniższego przykładu:
+
+![Jmeter](https://user-images.githubusercontent.com/50496148/77461129-644d5100-6e02-11ea-889e-b7227be0b75c.png)
+
+Wybieramy **Test Plan** > **Add** > **Listener** > **Graph Results**. Dodatkowo można wybrać opcję **View Results in Table**. Uruchamiamy test klikając przycisk **Uruchom** na pasku narzędzi lub poprzez kombinację klawiszy Ctrl + R.
