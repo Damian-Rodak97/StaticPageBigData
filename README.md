@@ -27,3 +27,7 @@ Odchylenie pokazane jest kolorem czerwonym - wskazuje odchylenie od średniej. I
 Odchylenie od średniej wynosi: 101
 Średnia wynosi: 107
 Mediana wynosi: 70
+
+Poniższy graf wykazuję że dla 20 użykowników aplikacja nie sklauję się ponieważ przepustowość nie rośnie.
+
+![Jmeter4](https://user-images.githubusercontent.com/50496148/77468677-366e0980-6e0e-11ea-9a75-765a81699356.png)
