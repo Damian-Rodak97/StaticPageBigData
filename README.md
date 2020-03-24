@@ -24,3 +24,6 @@ Przepustowość odpowiada za zdolność serwera do obsługi dużego obciążenia
 W tym teście przepustowość wynosi 599.865 na minutę. Oznacza to, że serwer aplikacji osadzonej na portalu Azure może obsłużyć 599.865 żądań na minutę.
 
 Odchylenie pokazane jest kolorem czerwonym - wskazuje odchylenie od średniej. Im mniejszy, tym lepiej.
+Odchylenie od średniej wynosi: 101
+Średnia wynosi: 107
+Mediana wynosi: 70
