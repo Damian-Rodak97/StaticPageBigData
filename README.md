@@ -12,6 +12,7 @@ Po uruchomieniu JMeter należy dodać **Thread Group** (grupa wątków). Uzupeł
 
 Prawym przyciskiem myszy klikamy na **Thread Group**. Wybieramy **Add** > **Sampler** > **HTTP Request**. W ustawieniach HTTP Request wypełniamy pola według poniższego przykładu:
 
+![Jmeter3](https://user-images.githubusercontent.com/50496148/77461473-e5a4e380-6e02-11ea-93e8-314103fda03c.png)
 
 
 Wybieramy **Test Plan** > **Add** > **Listener** > **Graph Results**. Dodatkowo można wybrać opcję **View Results in Table**. Uruchamiamy test klikając przycisk **Uruchom** na pasku narzędzi lub poprzez kombinację klawiszy Ctrl + R.
