@@ -19,8 +19,8 @@ Wybieramy **Test Plan** > **Add** > **Listener** > **Graph Results**. Dodatkowo 
 
 ![Jmeter](https://user-images.githubusercontent.com/50496148/77461129-644d5100-6e02-11ea-889e-b7227be0b75c.png)
 
-Przepustowość jest najważniejszym parametrem. Reprezentuje zdolność serwera do obsługi dużego obciążenia. Im wyższa przepustowość, tym lepsza wydajność serwera.
+Przepustowość odpowiada za zdolność serwera do obsługi dużego obciążenia. Im wyższa przepustowość, tym lepsza wydajność serwera.
 
-W tym teście przepustowość wynosi . Oznacza to, że serwer aplikacji osadzonej na portalu Azure może obsłużyć żądań na minutę. 
+W tym teście przepustowość wynosi 599.865 na minutę. Oznacza to, że serwer aplikacji osadzonej na portalu Azure może obsłużyć 599.865 żądań na minutę.
 
 Odchylenie pokazane jest kolorem czerwonym - wskazuje odchylenie od średniej. Im mniejszy, tym lepiej.
