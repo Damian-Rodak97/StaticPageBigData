@@ -36,3 +36,12 @@ Poniższy graf wykazuję że dla 20 użykowników aplikacja nie sklauję się po
 
 ![Jmeter4](https://user-images.githubusercontent.com/50496148/77468677-366e0980-6e0e-11ea-9a75-765a81699356.png)
 
+Próba utworzenia dwóch maszyn wirtualnych z obrazem JMeter i uruchomienia planu testów utworzonych w JMeterze.
+
+Stworzenie klucza publicznego ssh
+
+![Adnotacja 2020-04-15 161825](https://user-images.githubusercontent.com/50496148/80006907-d11d3f00-84c5-11ea-8d94-9edbac332c31.png)
+
+Nieudana próba stworzenia maszyn wirtualnych ze względów na problemy z regionem
+
+![Adnotacja 2020-04-15 161801](https://user-images.githubusercontent.com/50496148/80007062-0a55af00-84c6-11ea-889e-911b64d0477c.png)
