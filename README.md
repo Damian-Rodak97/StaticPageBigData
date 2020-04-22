@@ -45,3 +45,5 @@ Stworzenie klucza publicznego ssh
 Nieudana próba stworzenia maszyn wirtualnych ze względów na problemy z regionem
 
 ![Adnotacja 2020-04-15 161801](https://user-images.githubusercontent.com/50496148/80007062-0a55af00-84c6-11ea-889e-911b64d0477c.png)
+
+Brak możliwości wykonania zadania 5 bez testów.
